@@ -8,6 +8,7 @@ Primeiro projeto que fiz no aprendizado de Spring Boot, um simples app de cadast
 Tecnologias utilizadas:
 - Java
 - Spring Boot
+- Maven
 - Thymeleaf
 - Materialize CSS
 
