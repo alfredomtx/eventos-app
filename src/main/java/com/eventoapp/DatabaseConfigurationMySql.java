@@ -2,6 +2,7 @@ package com.eventoapp;
 
 import javax.sql.DataSource;
 
+import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.jdbc.datasource.DriverManagerDataSource;
@@ -10,7 +11,9 @@ import org.springframework.orm.jpa.vendor.Database;
 import org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter;
 
 
-public class DatabaseConfiguration {
+// Configuration disabled for production
+// @Configuration
+public class DatabaseConfigurationMySql {
 
 	@Bean
 	public DataSource dataSource() {
