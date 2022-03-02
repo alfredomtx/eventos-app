@@ -88,9 +88,9 @@ public class EventoController {
 
 		long idLong = evento.getId();
 
-		String codigo = "" + idLong;
+		String id = "" + idLong;
 
-		return "redirect:/" + codigo;
+		return "redirect:/" + id;
 	}
 
 	@RequestMapping(value = "/{id}", method = RequestMethod.POST)
@@ -99,7 +99,7 @@ public class EventoController {
 
 		if (result.hasErrors()) {
 			attributes.addFlashAttribute("mensagem", "Verifique os campos.");
-			return "redirect:/{codigo}";
+			return "redirect:/{id}";
 		}
 
 		Evento evento = er.findById(id);
@@ -111,6 +111,6 @@ public class EventoController {
 
 		attributes.addFlashAttribute("mensagem", "Convidado adicionado com sucesso.");
 
-		return "redirect:/{codigo}";
+		return "redirect:/{id}";
 	}
 }

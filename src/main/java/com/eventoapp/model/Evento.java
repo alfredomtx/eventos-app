@@ -73,7 +73,7 @@ public class Evento implements Serializable {
 
 	@Override
 	public String toString() {
-		return "Evento [codigo=" + id + ", nome=" + nome + ", local=" + local + ", data=" + data + ", horario="
+		return "Evento [id=" + id + ", nome=" + nome + ", local=" + local + ", data=" + data + ", horario="
 				+ horario + "]";
 	}
 	
