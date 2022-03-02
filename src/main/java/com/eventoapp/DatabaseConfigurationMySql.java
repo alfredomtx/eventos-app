@@ -10,6 +10,7 @@ import org.springframework.orm.jpa.JpaVendorAdapter;
 import org.springframework.orm.jpa.vendor.Database;
 import org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter;
 
+// Configuration disabled in production
 // @Configuration
 public class DatabaseConfigurationMySql {
 
