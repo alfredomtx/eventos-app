@@ -4,21 +4,18 @@ import java.net.URI;
 import java.net.URISyntaxException;
 
 import org.apache.commons.dbcp2.BasicDataSource;
-import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.context.annotation.Profile;
 import org.springframework.orm.jpa.JpaVendorAdapter;
 import org.springframework.orm.jpa.vendor.Database;
 import org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter;
-
 
 @Configuration
 public class DatabaseConfigurationPostgreSql {
 
 	@Bean
     public BasicDataSource dataSource() throws URISyntaxException {
-    	URI dbUri = new URI(System.getenv("DATABASE_URL"));
+        URI dbUri = new URI(System.getenv("DATABASE_URL"));
 
         String username = dbUri.getUserInfo().split(":")[0];
         String password = dbUri.getUserInfo().split(":")[1];
