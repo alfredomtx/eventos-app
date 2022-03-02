@@ -6,7 +6,7 @@ https://eventos-app-heroku.herokuapp.com/
 Primeiro projeto que fiz no aprendizado de Spring Boot, um simples app de cadastro de Eventos.
 
 Tecnologias utilizadas:
-- Java
+- Java 11
 - Spring Boot
 - Maven
 - Thymeleaf
